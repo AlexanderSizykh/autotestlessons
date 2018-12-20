@@ -1,4 +1,4 @@
-package ru.deliveryClub;
+package ru.prikolovo;
 
 import org.junit.After;
 import org.junit.Before;
