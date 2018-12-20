@@ -6,32 +6,21 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class FirstTest {
-    public ChromeDriver driver;
+public class FirstTest extends WebDriverSettings {
 
-    @Before
-    public void setup() {
-        System.setProperty("webdriver.chrome.driver", "/chromedriver/chromedriver.exe");
-        driver = new ChromeDriver();
-        System.out.println("test start");
-    }
     @Test
     public void firstTest() {
 
-        driver.get("http://deliveryclub.ru");
+        driver.get("https://prikolovo.ru/");
         String title = driver.getTitle();
-        Assert.assertTrue(title.equals("«Delivery Club» — круглосуточная доставка из любимых ресторанов города"));
+        Assert.assertTrue(title.equals("ПРИКОЛОВО :: магазин приколов и подарков! Все для отличного праздника!"));
     }
     @Test
     public void firstTest2() {
 
-        driver.get("http://deliveryclub.ru");
+        driver.get("https://prikolovo.ru/");
         String title = driver.getTitle();
-        Assert.assertTrue(title.equals("«Delivery Club» — круглосуточная доставка из любимых ресторанов города"));
+        Assert.assertTrue(title.equals("ПРИКОЛОВО :: магазин приколов и подарков! Все для отличного праздника!"));
     }
-    @After
-    public void close() {
-        System.out.println("test close");
-        driver.quit();
-    }
+
 }
