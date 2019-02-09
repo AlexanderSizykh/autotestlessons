@@ -10,14 +10,6 @@ public class FirstTest extends WebDriverSettings {
 
         driver.get("https://prikolovo.ru/");
         String title = driver.getTitle();
-        Assert.assertTrue(title.equals("ПРИКОЛОВО :: магазин приколов и подарков! Все для отличного праздника!"));
+        Assert.assertEquals(driver.getTitle(), "ПРИКОЛОВО :: магазин приколов и подарков! Все для отличного праздника!");
     }
-    @Test
-    public void firstTest2() {
-
-        driver.get("https://prikolovo.ru/");
-        String title = driver.getTitle();
-        Assert.assertTrue(title.equals("ПРИКОЛОВО :: магазин приколов и подарков! Все для отличного праздника!"));
-    }
-
 }

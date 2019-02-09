@@ -19,6 +19,7 @@ public class SignUp extends WebDriverSettings {
 
         // TODO
         // сделать ассерты для сообщений об ошибках
+        // List<WebElement> signInErrorMessages = driver.findElements(By.xpath("//*[@id='fieldsBlock']/ ???? "));
 
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("[class=\"formFieldError\"]")));
 

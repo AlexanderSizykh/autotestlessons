@@ -7,11 +7,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class WebDriverSettings {
-    public String SiteUrl = "https://prikolovo.ru/";
-    public String login = "legendsofaria@gmail.com";
-    public String pass = "фгещеуые";
-    public ChromeDriver driver;
-    public WebDriverWait wait;
+    String SiteUrl = "https://prikolovo.ru/";
+    String login = "legendsofaria@gmail.com";
+    String pass = "фгещеуые";
+    String signInErrorMsg = "Неверный e-mail или пароль";
+    ChromeDriver driver;
+    WebDriverWait wait;
+
     @Before
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "/chromedriver/chromedriver.exe");
